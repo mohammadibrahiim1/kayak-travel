@@ -54,7 +54,7 @@ const Airlines = () => {
   return (
     <div>
       <section className="container">
-        <div className="flex  items-center gap-5 mx-7">
+        <div className="flex  items-center gap-5 mx-7 mt-2">
           <div className="form-control">
             <label className=" flex gap-2 items-center cursor-pointer">
               <input type="checkbox" value={"OW"} onChange={handleFilterData} className="checkbox checkbox-sm mt-1" />
