@@ -1,0 +1,28 @@
+.airlines_card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .airlines_card_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-lg {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .airlines_card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
