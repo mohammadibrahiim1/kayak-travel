@@ -15,6 +15,7 @@ const Airlines = () => {
   ]);
   const [state, setState] = useState([]);
   const [airlines, setAirlines] = useState("");
+  console.log(airlines);
   const [filterData, setFilterData] = useState([...state]);
 
   // const [visible, setVisible] = useState(12);
