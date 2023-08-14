@@ -3,10 +3,7 @@ import "./DisplayAirline.css";
 import { Link } from "react-router-dom";
 
 const DisplayAirline = ({ airline }) => {
-  //   console.log(airline);
-  //   const { logoURL } = airline;
-
-  // const   {logoURL={`https://www.kayak.com/${logoURL}`}} = airline
+  const { name, logoURL, phone, site } = airline;
   return (
     <div>
       <section>
@@ -14,21 +11,21 @@ const DisplayAirline = ({ airline }) => {
           <div class="card">
             <div class="content">
               <div class="imgBx">
-                <img src={`https://www.kayak.com/${airline?.logoURL} `} alt={airline.name} />
+                <img src={`https://www.kayak.com/${logoURL} `} alt={name} />
               </div>
               <div class="contentBx">
                 <h3>
-                  {airline.name}
+                  {name}
                   <br />
                 </h3>
               </div>
             </div>
             <ul class="sci">
               <li>
-                <Link href="">{airline.phone}</Link>
+                <Link href="">{phone}</Link>
               </li>
               <li>
-                <Link href="">{airline.site}</Link>
+                <Link href="">{site}</Link>
               </li>
             </ul>
           </div>
