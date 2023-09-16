@@ -1,21 +1,27 @@
 import React from "react";
 
-const FilterOptions = ({filters,onFilterChange}) => {
+const FilterOptions = ({ filters, onFilterChange }) => {
   return (
     <div>
       <div>
-        <h3>Filter Options</h3>
-        {filters.map((filter) => (
-          <label key={filter.id}>
-            <input
-              type="checkbox"
-              value={filter.alliance}
-              checked={filter.selected}
-              onChange={() => onFilterChange(filter.alliance)}
-            />
-            {filter.elm}
-          </label>
-        ))}
+        <div className="flex  items-center gap-5 mx-7 mt-2">
+          {filters.map((filter) => {
+            return (
+              <div className="form-control">
+                <label key={filter.id} className=" flex gap-2 items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    value={filter.alliance}
+                    checked={filter.selected}
+                    className="checkbox checkbox-sm mt-1"
+                    onChange={() => onFilterChange(filter.alliance)}
+                  />
+                  <span className="text-lg  font-semibold ">{filter.elm}</span>
+                </label>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
