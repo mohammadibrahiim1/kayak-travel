@@ -4,7 +4,7 @@ const FilterOptions = ({ filters, onFilterChange }) => {
   return (
     <div>
       <div>
-        <div className="flex  items-center gap-5 mx-7 mt-2">
+        <div className="flex  items-center gap-5  mt-2">
           {filters.map((filter) => {
             return (
               <div className="form-control">
