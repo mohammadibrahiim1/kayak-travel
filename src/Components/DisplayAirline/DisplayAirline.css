@@ -127,22 +127,28 @@
   background-size: cover;
 }
 
-.container .card .content .contentBx h3 {
-  color: #000;
+.container .card .content .contentBx span {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 15px;
   text-align: center;
   margin: 12px 0 10px;
   line-height: 1.1em;
 }
+.contentBx {
+  display: flex;
 
-.container .card .content .contentBx h3 span {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* .container .card .content .contentBx h3 span {
   font-size: 12px;
   font-weight: 300;
   text-transform: initial;
-}
+} */
 
 .container .card .sci {
   position: absolute;
